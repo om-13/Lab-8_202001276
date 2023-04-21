@@ -118,3 +118,27 @@ public boolean fitsInCage(int cageLength){
 Modifying the code, we can see that all the test-cases gets successfully passed now
 
 ![image](https://user-images.githubusercontent.com/77343775/233540355-c35e59e3-f5a4-4e4f-9800-0d689fb58a2a.png)
+
+## Adding new Method
+
+Adding a new method _lengthInches()_ to return the length of the Boa in inches
+
+```java
+// returns the length of the Boa in inches 
+public int lengthInInches(){ 
+    return this.length*12;
+}
+```
+
+The new test cases defined for the same are as follows:
+
+```java
+@Test
+public void testLengthInInches() {
+    assertEquals("Error in fitsInCage()",24,jen.lengthInInches());
+    assertEquals("Error in fitsInCage()",36,ken.lengthInInches());
+}
+```
+The test cases gets passed successfully as shown below:
+
+![image](https://user-images.githubusercontent.com/77343775/233540590-d9d82889-c661-41c4-b9c0-f48d5aa246c6.png)
